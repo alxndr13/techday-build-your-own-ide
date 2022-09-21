@@ -19,3 +19,4 @@ vim.opt.lazyredraw = true       -- Faster scrolling
 vim.opt.undofile = true         -- enable persistent undo
 vim.opt.synmaxcol = 240         -- Max column for syntax highlight
 vim.opt.updatetime = 700        -- ms to wait for trigger an event
+vim.opt.mouse = "a"             -- allow the mouse

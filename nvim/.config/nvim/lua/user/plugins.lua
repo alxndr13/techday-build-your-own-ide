@@ -51,8 +51,10 @@ packer.init {
 
 return packer.startup(function(use)
   -- add your plugins here
+  use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } -- Have packer manage itself
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "nvim-treesitter/nvim-treesitter", commit = "518e27589c0463af15463c9d675c65e464efc2fe" }
+  use { "kyazdani42/nvim-tree.lua", commit = "09a51266bca28dd87febd63c66bdbd74f7764a63" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
