@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "nvim-treesitter/nvim-treesitter", commit = "518e27589c0463af15463c9d675c65e464efc2fe" }
   use { "kyazdani42/nvim-tree.lua", commit = "09a51266bca28dd87febd63c66bdbd74f7764a63" }
+  use { "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
