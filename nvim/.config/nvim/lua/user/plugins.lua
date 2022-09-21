@@ -51,6 +51,7 @@ packer.init {
 
 return packer.startup(function(use)
   -- add your plugins here
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
